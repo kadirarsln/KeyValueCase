@@ -1,6 +1,5 @@
 ﻿using KeyValueCase.Models;
 using KeyValueCase.Repositories;
-using Marten;
 
 namespace KeyValueCase.Services;
 
@@ -33,7 +32,6 @@ public class DataService(IKeyValueRepository repository) : IDataService
             await repository.SaveAsync(newItem);
         }
     }
-
 
     public async Task DeleteDataAsync(string key)
     {
