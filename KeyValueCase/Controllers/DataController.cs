@@ -1,7 +1,7 @@
 ﻿using KeyValueCase.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KeyValueStore.Controllers;
+namespace KeyValueCase.Controllers;
 
 [ApiController]
 [Route("data")]

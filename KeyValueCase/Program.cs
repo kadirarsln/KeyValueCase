@@ -1,4 +1,6 @@
+using KeyValueCase.Core;
 using KeyValueCase.Models;
+using KeyValueCase.Repositories;
 using KeyValueCase.Services;
 using Marten;
 
@@ -19,6 +21,7 @@ builder.Services.AddMarten(options =>
     options.Schema.For<KeyValueModel>().Identity(x => x.Id);
 });
 
+builder.Services.AddScoped<IKeyValueRepository, KeyValueRepository>();
 builder.Services.AddScoped<IDataService, DataService>();
 
 var app = builder.Build();

@@ -6,4 +6,3 @@ namespace KeyValueCase.Repositories;
 public interface IKeyValueRepository : IRepository<KeyValueModel, Guid>
 {
 }
-
